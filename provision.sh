@@ -1,4 +1,4 @@
-# Ruby on Rails provisioner for CentOS 6.7
+# Ruby on Rails provisioner for CentOS 6.9
 
 # yum
 yum install -y epel-release
