@@ -22,11 +22,10 @@ echo 'eval "$(rbenv init -)"' >> /etc/profile.d/rbenv.sh
 source /etc/profile.d/rbenv.sh
 
 # ruby
-rbenv install 2.3.0
-rbenv global 2.3.0
+rbenv install 2.4.3
+rbenv global 2.4.3
 
 # rails
 gem update --system --no-document
 gem update --no-document
 gem install bundler rails --no-document
-
