@@ -10,8 +10,12 @@ yum install -y sqlite-devel
 yum install -y nodejs
 
 # rbenv + ruby-build
+rm -rf /opt/.rbenv
 git clone https://github.com/rbenv/rbenv.git /opt/.rbenv
 git clone https://github.com/rbenv/ruby-build.git /opt/.rbenv/plugins/ruby-build
+
+rm -f /etc/profile.d/rbenv.sh
+touch /etc/profile.d/rbenv.sh
 echo 'export RBENV_ROOT="/opt/.rbenv"' >> /etc/profile.d/rbenv.sh
 echo 'export PATH="/opt/.rbenv/bin:$PATH"' >> /etc/profile.d/rbenv.sh
 echo 'eval "$(rbenv init -)"' >> /etc/profile.d/rbenv.sh
