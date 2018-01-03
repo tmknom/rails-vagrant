@@ -26,6 +26,6 @@ rbenv install 2.4.3
 rbenv global 2.4.3
 
 # rails
-gem update --system --no-document
-gem update --no-document
+gem update --force --system --no-document
+gem update --force --no-document
 gem install bundler rails --no-document
